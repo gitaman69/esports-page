@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9ineth-sense-esports</title>
+  <style>
+    body {
+      background-color: #121212;
+      background-size: cover;
+      background-position: center;
+      color: #050505;
+      font-family: 'Arial', sans-serif;
+      margin: 0; 
+      padding: 0;
+      overflow-x: hidden;
+      position: relative;
+    }
+    
+    img.background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    nav, footer {
+      background-color: rgba(252, 252, 252, 0);
+      justify-content: center;
+      margin-left: 20px;
+    }
+    
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; /* Adjust margin-top if needed */
+    }
+    
+    .brand-logo img {
+      width: 30%;
+    }
+
+    footer {
+      color: #ffffff;
+      padding: 5px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .def, .signin {
+      background-color: transparent;
+      border-radius: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 6px 12px; 
+      margin-left: 10px;
+      transition: background-color 0.3s;
+      border: none;
+    }
+
+    .def a, .signin a {
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 6px 12px; 
+    }
+
+    .def:hover, .signin:hover {
+      background-color: #03f2ff;
+    }
+    @media only screen and (min-width: 768px) {
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+      }
+      div {
+        width: 150%;
+        justify-content: center;
+        margin-left: 400px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <img class="background" src="images/elegant-smoke-wallpaper-background-dark-design.jpg" alt="Background Image">
+  <nav>
+    <button class="def"><a href="index.html">Home</a></button>
+    <button class="def"><a href="about.html">About</a></button>
+    <button class="def"><a href="result.html">Results</a></button>
+  </nav>
+  <div>
+    <a class="brand-logo right"><img src="images/9Slogo.png" alt="Logo" class="logo-image"></a>
+  </div>
+  <footer>
+    <p>This is an official website of 9S Esports.</p>
+  </footer>
+</body>
+</html>

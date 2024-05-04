@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Photo Upload</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: #33333300;
+        z-index: 1000;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 70px 20px 20px;
+    }
+    .box {
+        width: 200px;
+        height: 250px;
+        margin: 10px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .box img {
+        max-width: 100%;
+        max-height: 80%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .upload-btn {
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .file-input {
+        display: none;
+    }
+    .box-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .def{
+        font-size: 18px;
+        background: #4070f4;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        margin-left: 10px;
+        padding: 8px 25px;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+    .def a{
+        color: #050505;
+    }
+    .def:hover {
+      background-color: #03f2ff;
+    }
+    .upload-label {
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <nav><button class="def"><a href="index.html">Home</a></button></nav>
+<div class="container">
+    <div class="box" id="box1">
+        <div class="box-title">Result of 1-2PM</div>
+        <img id="image1" src="placeholder.jpg" alt="Placeholder Image">
+        <label for="fileInput1" class="upload-label">Upload</label>
+        <input type="file" class="file-input" id="fileInput1" onchange="previewImage(1)">
+    </div>
+    <div class="box" id="box2">
+        <div class="box-title">Result of 3-4PM</div>
+        <img id="image2" src="placeholder.jpg" alt="Placeholder Image">
+        <label for="fileInput2" class="upload-label">Upload</label>
+        <input type="file" class="file-input" id="fileInput2" onchange="previewImage(2)">
+    </div>
+    <div class="box" id="box3">
+        <div class="box-title">Result of 5-6PM</div>
+        <img id="image3" src="placeholder.jpg" alt="Placeholder Image">
+        <label for="fileInput3" class="upload-label">Upload</label>
+        <input type="file" class="file-input" id="fileInput3" onchange="previewImage(3)">
+    </div>
+    <div class="box" id="box4">
+        <div class="box-title">Result of 7-8PM</div>
+        <img id="image4" src="placeholder.jpg" alt="Placeholder Image">
+        <label for="fileInput4" class="upload-label">Upload</label>
+        <input type="file" class="file-input" id="fileInput4" onchange="previewImage(4)">
+    </div>
+    <div class="box" id="box5">
+        <div class="box-title">Result of 9-10PM</div>
+        <img id="image5" src="placeholder.jpg" alt="Placeholder Image">
+        <label for="fileInput5" class="upload-label">Upload</label>
+        <input type="file" class="file-input" id="fileInput5" onchange="previewImage(5)">
+    </div>
+    <div class="box" id="box6">
+        <div class="box-title">Result of 11-12PM</div>
+        <img id="image6" src="placeholder.jpg" alt="Placeholder Image">
+        <label for="fileInput6" class="upload-label">Upload</label>
+        <input type="file" class="file-input" id="fileInput6" onchange="previewImage(6)">
+    </div>
+</div>
+</body>
+</html>
+
